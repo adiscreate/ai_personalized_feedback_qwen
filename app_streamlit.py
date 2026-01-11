@@ -194,7 +194,7 @@ elif menu == "Audio":
     st.write("Podcast tentang Machine Learning Regression")
 
     st.audio(
-        "assets/Bedah Konsep Machine Learning Regression.m4a"
+        "Bedah Konsep Machine Learning Regression.m4a"
     )
 
 # 4. VIDEO
@@ -203,7 +203,7 @@ elif menu == "Video":
     st.write("Contoh skenario penerapan Machine Learning Regression dalam Penjualan Bakso")
 
     st.video(
-        "assets/Video Machine Learning Regression.mp4"
+        "Video Machine Learning Regression.mp4"
     )
 
 # 5. DATASET FOLLOWER
