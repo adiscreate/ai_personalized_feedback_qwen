@@ -186,7 +186,7 @@ Streamlit memudahkan deployment model ML.
 elif menu == "Infografis":
     st.header("📊 Infografis")
 
-    st.image("assets/Infografis.png", caption="Infografis Machine Learning Regression")
+    st.image("Infografis.png", caption="Infografis Machine Learning Regression")
 
 # 3. AUDIO
 elif menu == "Audio":
