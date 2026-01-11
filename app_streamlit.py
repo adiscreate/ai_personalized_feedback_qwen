@@ -405,10 +405,10 @@ elif menu == "AI-powered Quiz":
                     response = client.chat_completion(
                         model=MODEL,
                         messages=[
-                            {"role": "system", "content": "Kamu adalah guru Machine Learning yang ramah dan motivatif untuk siswa SMK kelas 11 di Indonesia. Berikan feedback gaya sandwich: mulai positif (puji yang benar), lalu konstruktif (sebut bab lemah spesifik dan rekomendasi belajar), akhiri positif (dorong semangat). Gunakan bahasa Indonesia yang edukatif."},
+                            {"role": "system", "content": "Kamu adalah guru Machine Learning yang ramah dan motivatif untuk siswa SMK kelas 11 di Indonesia. Berikan feedback gaya sandwich: mulai positif (puji yang benar), lalu konstruktif (sebut bab lemah spesifik dan rekomendasi belajar), akhiri positif (dorong semangat). Gunakan bahasa Indonesia yang edukatif. Panggil siswa dengan sebuat 'Siswa Hebat!'"},
                             {"role": "user", "content": f"Beri personalized feedback berdasarkan hasil quiz regression ini:\n{ringkasan}\nRekomendasikan materi atau latihan spesifik untuk bab lemah."}
                         ],
-                        max_tokens=500,
+                        max_tokens=300,
                         temperature=0.5
                     )
 
