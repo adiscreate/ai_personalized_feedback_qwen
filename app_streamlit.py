@@ -346,7 +346,7 @@ elif menu == "AI-powered Quiz":
 
     df = load_quiz()
 
-    st.subheader(":brain: Machine Learning Regression Quiz")
+    st.header(":brain: Machine Learning Regression Quiz")
     st.markdown(f"with Personalized Feedback Powered by `{MODEL}` | Total : {len(df)} Questions")
 
     # ===== Form jawaban siswa =====
