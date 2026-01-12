@@ -49,7 +49,7 @@ quotes = [
 
 
 quote, author = random.choice(quotes)
-st.sidebar.success(f'"{quote} -- {author}"')
+st.sidebar.success(f'"{quote}" -- {author}')
 st.sidebar.caption("Dibuat dengan :fire: oleh **Adi Setiawan**")
 # ======================
 # HALAMAN UTAMA
