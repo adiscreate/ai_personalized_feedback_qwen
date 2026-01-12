@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from huggingface_hub import InferenceClient
 import json
+import random
 
 # ======================
 # KONFIGURASI HALAMAN
@@ -33,7 +34,22 @@ menu = st.sidebar.selectbox(
     )
 )
 
-st.sidebar.divider()
+quotes = [
+    ("Man jadda wajada — siapa yang bersungguh-sungguh pasti berhasil.", "Pepatah Arab"),
+    ("Belajar hari ini adalah investasi untuk masa depan.", "Anonim"),
+    ("Kesuksesan adalah hasil dari kebiasaan kecil yang dilakukan setiap hari.", "James Clear"),
+    ("Jangan takut salah, takutlah jika tidak pernah mencoba.", "Buya Hamka"),
+    ("Ilmu tidak akan datang kepada orang yang malas.", "Imam Syafi’i"),
+    ("Proses tidak pernah mengkhianati hasil.", "Anonim"),
+    ("Sedikit demi sedikit, lama-lama menjadi mahir.", "Pepatah Indonesia"),
+    ("Belajar bukan untuk hari ini saja, tapi untuk seumur hidup.", "Ki Hajar Dewantara"),
+    ("Gagal itu biasa, berhenti itu pilihan.", "Anonim"),
+    ("Kerja keras mengalahkan bakat jika bakat tidak bekerja keras.", "Tim Notke")
+]
+
+
+quote, author = random.choice(quotes)
+st.sidebar.success(f'"{quote} -- {author}"')
 st.sidebar.caption("Dibuat dengan :fire: oleh **Adi Setiawan**")
 # ======================
 # HALAMAN UTAMA
