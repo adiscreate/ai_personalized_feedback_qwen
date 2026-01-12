@@ -209,6 +209,8 @@ elif menu == "Infografis":
     st.image("Infografis 2.png", caption="Infografis Machine Learning Regression")
     
     st.image("Infografis 3.png", caption="Berbagai Algoritma Machine Learning Regression")
+    
+    st.image("Infografis 4.png", caption="Alur Kerja Machine Learning Regression")
 
 # 3. AUDIO
 elif menu == "Audio":
